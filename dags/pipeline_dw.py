@@ -14,7 +14,7 @@ with DAG(
     'pipeline_dw_proyecto4',
     default_args=default_args,
     description='Pipeline ETL Full Load + Snapshot para Proyecto 4',
-    schedule_interval='@daily',
+    schedule='@daily',
     start_date=datetime(2026, 1, 1),
     catchup=False,
 ) as dag:

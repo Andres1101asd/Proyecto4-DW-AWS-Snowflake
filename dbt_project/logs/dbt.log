@@ -2288,3 +2288,753 @@ SELECT * FROM db_proyecto4.silver.dim_clientes
 [0m09:32:36.198919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x783d63746780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x783d5cd111d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x783d5e28d590>]}
 [0m09:32:36.199673 [debug] [MainThread]: Flushing usage events
 [0m09:32:36.256536 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:33:26.629204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7709e63e7a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7709e82491d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7709e4bc7b10>]}
+
+
+============================== 10:33:26.639985 | cbc69b8f-4870-4fe6-a6f8-f5d48a2abc6b ==============================
+[0m10:33:26.639985 [info ] [MainThread]: Running with dbt=1.13.0-rc1
+[0m10:33:26.640877 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'maximum_seed_size_mib': '1', 'profiles_dir': '/home/codespace/.dbt', 'hints_enabled': 'True', 'target_path': 'None', 'no_print': 'None', 'write_json': 'True', 'log_format': 'default', 'static_parser': 'True', 'empty': 'False', 'printer_width': '80', 'log_cache_events': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'log_path': '/workspaces/Proyecto4-DW-AWS-Snowflake/dbt_project/logs', 'invocation_command': 'dbt run', 'debug': 'False', 'quiet': 'False', 'warn_error': 'None', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False'}
+[0m10:33:26.641376 [debug] [MainThread]: Tracking: tracking
+[0m10:33:27.176272 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m10:33:27.176929 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m10:33:27.177462 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m10:33:27.757940 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cbc69b8f-4870-4fe6-a6f8-f5d48a2abc6b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7709e0e73ce0>]}
+[0m10:33:27.852019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cbc69b8f-4870-4fe6-a6f8-f5d48a2abc6b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7709e594e7a0>]}
+[0m10:33:27.853649 [info ] [MainThread]: Registered adapter: snowflake=1.12.5
+[0m10:33:28.015635 [debug] [MainThread]: checksum: 85d662669d94aa3cf7eb84a3fdab4c03c91fdd974bcc0677d75f07de2bd4a89a, vars: {}, profile: proyecto_dw, target: dev, version: 1.13.0rc1
+[0m10:33:28.197338 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:33:28.197939 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m10:33:28.198355 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:33:28.209155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cbc69b8f-4870-4fe6-a6f8-f5d48a2abc6b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7709e04feb50>]}
+[0m10:33:28.371019 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/Proyecto4-DW-AWS-Snowflake/dbt_project/target/manifest.json
+[0m10:33:28.374609 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/Proyecto4-DW-AWS-Snowflake/dbt_project/target/semantic_manifest.json
+[0m10:33:28.413906 [debug] [MainThread]: Wrote artifact OsiDocument to /workspaces/Proyecto4-DW-AWS-Snowflake/dbt_project/target/osi_document.json
+[0m10:33:28.432664 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cbc69b8f-4870-4fe6-a6f8-f5d48a2abc6b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7709e0348e60>]}
+[0m10:33:28.433224 [info ] [MainThread]: Found 6 models, 1 snapshot, 3 sources, 563 macros
+[0m10:33:28.433790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cbc69b8f-4870-4fe6-a6f8-f5d48a2abc6b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7709e031bd90>]}
+[0m10:33:28.437763 [info ] [MainThread]: 
+[0m10:33:28.439356 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m10:33:28.440848 [info ] [MainThread]: 
+[0m10:33:28.442797 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m10:33:28.458364 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_db_proyecto4'
+[0m10:33:28.496199 [debug] [ThreadPool]: Using snowflake connection "list_db_proyecto4"
+[0m10:33:28.496990 [debug] [ThreadPool]: On list_db_proyecto4: show terse schemas in database db_proyecto4
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "connection_name": "list_db_proyecto4"} */
+[0m10:33:28.498249 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:33:31.354643 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 2.856 seconds
+[0m10:33:31.363062 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_db_proyecto4, now list_db_proyecto4_silver)
+[0m10:33:31.369060 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_db_proyecto4_gold'
+[0m10:33:31.386163 [debug] [ThreadPool]: Using snowflake connection "list_db_proyecto4_gold"
+[0m10:33:31.387446 [debug] [ThreadPool]: On list_db_proyecto4_gold: show objects in db_proyecto4.gold
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "connection_name": "list_db_proyecto4_gold"} */;
+[0m10:33:31.387880 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:33:31.387012 [debug] [ThreadPool]: Using snowflake connection "list_db_proyecto4_silver"
+[0m10:33:31.388652 [debug] [ThreadPool]: On list_db_proyecto4_silver: show objects in db_proyecto4.silver
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "connection_name": "list_db_proyecto4_silver"} */;
+[0m10:33:31.497060 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 0.108 seconds
+[0m10:33:31.504352 [debug] [ThreadPool]: Using snowflake connection "list_db_proyecto4_silver"
+[0m10:33:31.504816 [debug] [ThreadPool]: On list_db_proyecto4_silver: show user functions in db_proyecto4.silver
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "connection_name": "list_db_proyecto4_silver"} */
+[0m10:33:31.757229 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.369 seconds
+[0m10:33:31.761695 [debug] [ThreadPool]: Using snowflake connection "list_db_proyecto4_gold"
+[0m10:33:31.762221 [debug] [ThreadPool]: On list_db_proyecto4_gold: show user functions in db_proyecto4.gold
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "connection_name": "list_db_proyecto4_gold"} */
+[0m10:33:31.811659 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.306 seconds
+[0m10:33:32.478252 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.716 seconds
+[0m10:33:32.481447 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cbc69b8f-4870-4fe6-a6f8-f5d48a2abc6b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7709e067bba0>]}
+[0m10:33:32.485392 [debug] [Thread-2 (]: Began running node model.proyecto_dw.stg_productos
+[0m10:33:32.486990 [info ] [Thread-2 (]: 2 of 6 START sql view model silver.stg_productos ............................... [RUN]
+[0m10:33:32.487691 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_db_proyecto4_gold, now model.proyecto_dw.stg_productos)
+[0m10:33:32.488138 [debug] [Thread-2 (]: Began compiling node model.proyecto_dw.stg_productos
+[0m10:33:32.486413 [debug] [Thread-1 (]: Began running node model.proyecto_dw.stg_clientes
+[0m10:33:32.485934 [debug] [Thread-3 (]: Began running node model.proyecto_dw.stg_ventas
+[0m10:33:32.494728 [debug] [Thread-2 (]: Writing injected SQL for node "model.proyecto_dw.stg_productos"
+[0m10:33:32.496358 [info ] [Thread-1 (]: 1 of 6 START sql view model silver.stg_clientes ................................ [RUN]
+[0m10:33:32.498188 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_db_proyecto4_silver, now model.proyecto_dw.stg_clientes)
+[0m10:33:32.498730 [debug] [Thread-1 (]: Began compiling node model.proyecto_dw.stg_clientes
+[0m10:33:32.497183 [info ] [Thread-3 (]: 3 of 6 START sql view model silver.stg_ventas .................................. [RUN]
+[0m10:33:32.501627 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.proyecto_dw.stg_ventas'
+[0m10:33:32.502203 [debug] [Thread-3 (]: Began compiling node model.proyecto_dw.stg_ventas
+[0m10:33:32.501002 [debug] [Thread-2 (]: Began executing node model.proyecto_dw.stg_productos
+[0m10:33:32.505979 [debug] [Thread-3 (]: Writing injected SQL for node "model.proyecto_dw.stg_ventas"
+[0m10:33:32.500549 [debug] [Thread-1 (]: Writing injected SQL for node "model.proyecto_dw.stg_clientes"
+[0m10:33:32.528355 [debug] [Thread-3 (]: Began executing node model.proyecto_dw.stg_ventas
+[0m10:33:32.539440 [debug] [Thread-1 (]: Began executing node model.proyecto_dw.stg_clientes
+[0m10:33:32.580339 [debug] [Thread-2 (]: Writing runtime sql for node "model.proyecto_dw.stg_productos"
+[0m10:33:32.584991 [debug] [Thread-1 (]: Writing runtime sql for node "model.proyecto_dw.stg_clientes"
+[0m10:33:32.588886 [debug] [Thread-3 (]: Writing runtime sql for node "model.proyecto_dw.stg_ventas"
+[0m10:33:32.589908 [debug] [Thread-2 (]: Using snowflake connection "model.proyecto_dw.stg_productos"
+[0m10:33:32.590593 [debug] [Thread-2 (]: On model.proyecto_dw.stg_productos: create or replace   view db_proyecto4.silver.stg_productos
+  
+  
+  
+  
+  as (
+    SELECT 
+    id_producto,
+    nombre_producto,
+    categoria,
+    precio
+FROM db_proyecto4.oltp.productos
+  )
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "node_id": "model.proyecto_dw.stg_productos"} */;
+[0m10:33:32.591182 [debug] [Thread-3 (]: Using snowflake connection "model.proyecto_dw.stg_ventas"
+[0m10:33:32.592605 [debug] [Thread-3 (]: On model.proyecto_dw.stg_ventas: create or replace   view db_proyecto4.silver.stg_ventas
+  
+  
+  
+  
+  as (
+    SELECT 
+    v.id_venta,
+    v.id_cliente,
+    v.id_producto,
+    v.fecha_venta,
+    v.cantidad,
+    p.precio,
+    (v.cantidad * p.precio) AS total_venta
+FROM db_proyecto4.oltp.ventas v
+JOIN db_proyecto4.oltp.productos p 
+    ON v.id_producto = p.id_producto
+  )
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "node_id": "model.proyecto_dw.stg_ventas"} */;
+[0m10:33:32.593143 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m10:33:32.592090 [debug] [Thread-1 (]: Using snowflake connection "model.proyecto_dw.stg_clientes"
+[0m10:33:32.594437 [debug] [Thread-1 (]: On model.proyecto_dw.stg_clientes: create or replace   view db_proyecto4.silver.stg_clientes
+  
+  
+  
+  
+  as (
+    SELECT 
+    id_cliente,
+    nombre,
+    email,
+    ciudad,
+    fecha_registro
+FROM db_proyecto4.oltp.clientes
+  )
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "node_id": "model.proyecto_dw.stg_clientes"} */;
+[0m10:33:32.871690 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.277 seconds
+[0m10:33:32.902019 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.310 seconds
+[0m10:33:32.905360 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cbc69b8f-4870-4fe6-a6f8-f5d48a2abc6b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7709e0313e90>]}
+[0m10:33:32.906537 [info ] [Thread-1 (]: 1 of 6 OK created sql view model silver.stg_clientes ........................... [[32mSUCCESS 1[0m in 0.40s]
+[0m10:33:32.907461 [debug] [Thread-1 (]: Finished running node model.proyecto_dw.stg_clientes
+[0m10:33:32.905812 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cbc69b8f-4870-4fe6-a6f8-f5d48a2abc6b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7709e607e4c0>]}
+[0m10:33:32.909013 [info ] [Thread-2 (]: 2 of 6 OK created sql view model silver.stg_productos .......................... [[32mSUCCESS 1[0m in 0.42s]
+[0m10:33:32.909826 [debug] [Thread-2 (]: Finished running node model.proyecto_dw.stg_productos
+[0m10:33:32.908358 [debug] [Thread-4 (]: Began running node model.proyecto_dw.dim_clientes
+[0m10:33:32.910551 [info ] [Thread-4 (]: 4 of 6 START sql table model silver.dim_clientes ............................... [RUN]
+[0m10:33:32.911354 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.proyecto_dw.dim_clientes'
+[0m10:33:32.912369 [debug] [Thread-4 (]: Began compiling node model.proyecto_dw.dim_clientes
+[0m10:33:32.914334 [debug] [Thread-4 (]: Writing injected SQL for node "model.proyecto_dw.dim_clientes"
+[0m10:33:32.911832 [debug] [Thread-1 (]: Began running node model.proyecto_dw.dim_productos
+[0m10:33:32.915111 [info ] [Thread-1 (]: 5 of 6 START sql table model silver.dim_productos .............................. [RUN]
+[0m10:33:32.916221 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.proyecto_dw.stg_clientes, now model.proyecto_dw.dim_productos)
+[0m10:33:32.917000 [debug] [Thread-1 (]: Began compiling node model.proyecto_dw.dim_productos
+[0m10:33:32.919697 [debug] [Thread-1 (]: Writing injected SQL for node "model.proyecto_dw.dim_productos"
+[0m10:33:32.917867 [debug] [Thread-4 (]: Began executing node model.proyecto_dw.dim_clientes
+[0m10:33:32.940851 [debug] [Thread-1 (]: Began executing node model.proyecto_dw.dim_productos
+[0m10:33:32.964218 [debug] [Thread-4 (]: Writing runtime sql for node "model.proyecto_dw.dim_clientes"
+[0m10:33:32.964996 [debug] [Thread-1 (]: Writing runtime sql for node "model.proyecto_dw.dim_productos"
+[0m10:33:32.965956 [debug] [Thread-1 (]: Using snowflake connection "model.proyecto_dw.dim_productos"
+[0m10:33:32.967006 [debug] [Thread-1 (]: On model.proyecto_dw.dim_productos: create or replace transient table db_proyecto4.silver.dim_productos
+    
+    
+    
+    
+    
+
+    as (SELECT DISTINCT
+    id_producto,
+    nombre_producto,
+    categoria
+FROM db_proyecto4.silver.stg_productos
+    )
+
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "node_id": "model.proyecto_dw.dim_productos"} */;
+[0m10:33:32.966556 [debug] [Thread-4 (]: Using snowflake connection "model.proyecto_dw.dim_clientes"
+[0m10:33:32.967661 [debug] [Thread-4 (]: On model.proyecto_dw.dim_clientes: create or replace transient table db_proyecto4.silver.dim_clientes
+    
+    
+    
+    
+    
+
+    as (SELECT DISTINCT
+    id_cliente,
+    nombre AS nombre_cliente,
+    ciudad,
+    email
+FROM db_proyecto4.silver.stg_clientes
+    )
+
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "node_id": "model.proyecto_dw.dim_clientes"} */;
+[0m10:33:32.968195 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m10:33:33.045122 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.452 seconds
+[0m10:33:33.048822 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cbc69b8f-4870-4fe6-a6f8-f5d48a2abc6b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7709db137250>]}
+[0m10:33:33.049933 [info ] [Thread-3 (]: 3 of 6 OK created sql view model silver.stg_ventas ............................. [[32mSUCCESS 1[0m in 0.55s]
+[0m10:33:33.051002 [debug] [Thread-3 (]: Finished running node model.proyecto_dw.stg_ventas
+[0m10:33:33.052079 [debug] [Thread-2 (]: Began running node model.proyecto_dw.fct_ventas
+[0m10:33:33.053023 [info ] [Thread-2 (]: 6 of 6 START sql table model silver.fct_ventas ................................. [RUN]
+[0m10:33:33.053924 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.proyecto_dw.stg_productos, now model.proyecto_dw.fct_ventas)
+[0m10:33:33.054629 [debug] [Thread-2 (]: Began compiling node model.proyecto_dw.fct_ventas
+[0m10:33:33.057057 [debug] [Thread-2 (]: Writing injected SQL for node "model.proyecto_dw.fct_ventas"
+[0m10:33:33.058023 [debug] [Thread-2 (]: Began executing node model.proyecto_dw.fct_ventas
+[0m10:33:33.062120 [debug] [Thread-2 (]: Writing runtime sql for node "model.proyecto_dw.fct_ventas"
+[0m10:33:33.064026 [debug] [Thread-2 (]: Using snowflake connection "model.proyecto_dw.fct_ventas"
+[0m10:33:33.064630 [debug] [Thread-2 (]: On model.proyecto_dw.fct_ventas: create or replace transient table db_proyecto4.silver.fct_ventas
+    
+    
+    
+    
+    
+
+    as (SELECT 
+    v.id_venta,
+    v.id_cliente,
+    v.id_producto,
+    v.fecha_venta,
+    v.cantidad,
+    v.precio,
+    v.total_venta
+FROM db_proyecto4.silver.stg_ventas v
+    )
+
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "node_id": "model.proyecto_dw.fct_ventas"} */;
+[0m10:33:34.370620 [debug] [Thread-1 (]: SQL status: SUCCESS 100 in 1.403 seconds
+[0m10:33:34.374070 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cbc69b8f-4870-4fe6-a6f8-f5d48a2abc6b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7709e0591c50>]}
+[0m10:33:34.374815 [info ] [Thread-1 (]: 5 of 6 OK created sql table model silver.dim_productos ......................... [[32mSUCCESS 100[0m in 1.46s]
+[0m10:33:34.375696 [debug] [Thread-1 (]: Finished running node model.proyecto_dw.dim_productos
+[0m10:33:34.594102 [debug] [Thread-2 (]: SQL status: SUCCESS 98970 in 1.529 seconds
+[0m10:33:34.597440 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cbc69b8f-4870-4fe6-a6f8-f5d48a2abc6b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7709db1d11d0>]}
+[0m10:33:34.598143 [info ] [Thread-2 (]: 6 of 6 OK created sql table model silver.fct_ventas ............................ [[32mSUCCESS 98970[0m in 1.54s]
+[0m10:33:34.599065 [debug] [Thread-2 (]: Finished running node model.proyecto_dw.fct_ventas
+[0m10:33:36.468417 [debug] [Thread-4 (]: SQL status: SUCCESS 10000 in 3.500 seconds
+[0m10:33:36.471818 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cbc69b8f-4870-4fe6-a6f8-f5d48a2abc6b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7709db1bbb90>]}
+[0m10:33:36.472560 [info ] [Thread-4 (]: 4 of 6 OK created sql table model silver.dim_clientes .......................... [[32mSUCCESS 10000[0m in 3.56s]
+[0m10:33:36.473482 [debug] [Thread-4 (]: Finished running node model.proyecto_dw.dim_clientes
+[0m10:33:36.476437 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:33:36.477029 [debug] [MainThread]: Connection 'model.proyecto_dw.dim_productos' was left open.
+[0m10:33:36.478112 [debug] [MainThread]: On model.proyecto_dw.dim_productos: Close
+[0m10:33:36.534651 [debug] [MainThread]: Connection 'model.proyecto_dw.fct_ventas' was left open.
+[0m10:33:36.535226 [debug] [MainThread]: On model.proyecto_dw.fct_ventas: Close
+[0m10:33:36.594163 [debug] [MainThread]: Connection 'model.proyecto_dw.stg_ventas' was left open.
+[0m10:33:36.594820 [debug] [MainThread]: On model.proyecto_dw.stg_ventas: Close
+[0m10:33:36.660893 [debug] [MainThread]: Connection 'model.proyecto_dw.dim_clientes' was left open.
+[0m10:33:36.661462 [debug] [MainThread]: On model.proyecto_dw.dim_clientes: Close
+[0m10:33:36.761108 [info ] [MainThread]: 
+[0m10:33:36.762035 [info ] [MainThread]: Finished running 3 table models, 3 view models in 0 hours 0 minutes and 8.32 seconds (8.32s).
+[0m10:33:36.763829 [debug] [MainThread]: Command end result
+[0m10:33:36.805016 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/Proyecto4-DW-AWS-Snowflake/dbt_project/target/manifest.json
+[0m10:33:36.807217 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/Proyecto4-DW-AWS-Snowflake/dbt_project/target/semantic_manifest.json
+[0m10:33:36.809220 [debug] [MainThread]: Wrote artifact OsiDocument to /workspaces/Proyecto4-DW-AWS-Snowflake/dbt_project/target/osi_document.json
+[0m10:33:36.817268 [debug] [MainThread]: Wrote artifact RunExecutionResult to /workspaces/Proyecto4-DW-AWS-Snowflake/dbt_project/target/run_results.json
+[0m10:33:36.817750 [info ] [MainThread]: 
+[0m10:33:36.818350 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:33:36.818934 [info ] [MainThread]: 
+[0m10:33:36.819667 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=6
+[0m10:33:36.820896 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 10.289596, "process_in_blocks": "95152", "process_kernel_time": 0.624414, "process_mem_max_rss": "208964", "process_out_blocks": "3000", "process_user_time": 4.279281}
+[0m10:33:36.821816 [debug] [MainThread]: Command `dbt run` succeeded at 10:33:36.821695 after 10.29 seconds
+[0m10:33:36.822304 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7709db11adb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7709e4ba9250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7709a7f3af90>]}
+[0m10:33:36.822777 [debug] [MainThread]: Flushing usage events
+[0m10:33:36.922440 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:33:40.762878 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7baab8367a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7baaba1cd1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7baab6b47b10>]}
+
+
+============================== 10:33:40.766246 | 863a5294-235c-43a5-9492-5f2933335d46 ==============================
+[0m10:33:40.766246 [info ] [MainThread]: Running with dbt=1.13.0-rc1
+[0m10:33:40.767093 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/home/codespace/.dbt', 'log_path': '/workspaces/Proyecto4-DW-AWS-Snowflake/dbt_project/logs', 'debug': 'False', 'introspect': 'True', 'write_json': 'True', 'static_parser': 'True', 'warn_error': 'None', 'maximum_seed_size_mib': '1', 'cache_selected_only': 'False', 'empty': 'False', 'target_path': 'None', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'indirect_selection': 'eager', 'no_print': 'None', 'hints_enabled': 'True', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt snapshot', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'version_check': 'True', 'log_format': 'default', 'log_cache_events': 'False', 'quiet': 'False', 'printer_width': '80'}
+[0m10:33:40.767614 [debug] [MainThread]: Tracking: tracking
+[0m10:33:41.077469 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m10:33:41.078439 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m10:33:41.079119 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m10:33:41.388331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '863a5294-235c-43a5-9492-5f2933335d46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7baab2de3ce0>]}
+[0m10:33:41.465836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '863a5294-235c-43a5-9492-5f2933335d46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7baab78d67a0>]}
+[0m10:33:41.466955 [info ] [MainThread]: Registered adapter: snowflake=1.12.5
+[0m10:33:41.665523 [debug] [MainThread]: checksum: 85d662669d94aa3cf7eb84a3fdab4c03c91fdd974bcc0677d75f07de2bd4a89a, vars: {}, profile: proyecto_dw, target: dev, version: 1.13.0rc1
+[0m10:33:41.840496 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:33:41.841004 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m10:33:41.841467 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:33:41.852137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '863a5294-235c-43a5-9492-5f2933335d46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7baab247eb50>]}
+[0m10:33:42.018982 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/Proyecto4-DW-AWS-Snowflake/dbt_project/target/manifest.json
+[0m10:33:42.021200 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/Proyecto4-DW-AWS-Snowflake/dbt_project/target/semantic_manifest.json
+[0m10:33:42.034230 [debug] [MainThread]: Wrote artifact OsiDocument to /workspaces/Proyecto4-DW-AWS-Snowflake/dbt_project/target/osi_document.json
+[0m10:33:42.042446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '863a5294-235c-43a5-9492-5f2933335d46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7baab22e65d0>]}
+[0m10:33:42.042966 [info ] [MainThread]: Found 6 models, 1 snapshot, 3 sources, 563 macros
+[0m10:33:42.043523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '863a5294-235c-43a5-9492-5f2933335d46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7baab2297bd0>]}
+[0m10:33:42.045819 [info ] [MainThread]: 
+[0m10:33:42.046399 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m10:33:42.046920 [info ] [MainThread]: 
+[0m10:33:42.047693 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m10:33:42.048776 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_db_proyecto4'
+[0m10:33:42.067680 [debug] [ThreadPool]: Using snowflake connection "list_db_proyecto4"
+[0m10:33:42.068129 [debug] [ThreadPool]: On list_db_proyecto4: show terse schemas in database db_proyecto4
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "connection_name": "list_db_proyecto4"} */
+[0m10:33:42.068577 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:33:44.111616 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 2.043 seconds
+[0m10:33:44.120394 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_db_proyecto4, now list_db_proyecto4_gold)
+[0m10:33:44.121137 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_db_proyecto4_silver'
+[0m10:33:44.139528 [debug] [ThreadPool]: Using snowflake connection "list_db_proyecto4_gold"
+[0m10:33:44.144311 [debug] [ThreadPool]: On list_db_proyecto4_gold: show objects in db_proyecto4.gold
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "connection_name": "list_db_proyecto4_gold"} */;
+[0m10:33:44.143883 [debug] [ThreadPool]: Using snowflake connection "list_db_proyecto4_silver"
+[0m10:33:44.144890 [debug] [ThreadPool]: On list_db_proyecto4_silver: show objects in db_proyecto4.silver
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "connection_name": "list_db_proyecto4_silver"} */;
+[0m10:33:44.145333 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:33:44.248741 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.104 seconds
+[0m10:33:44.255771 [debug] [ThreadPool]: Using snowflake connection "list_db_proyecto4_gold"
+[0m10:33:44.256210 [debug] [ThreadPool]: On list_db_proyecto4_gold: show user functions in db_proyecto4.gold
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "connection_name": "list_db_proyecto4_gold"} */
+[0m10:33:44.325139 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.068 seconds
+[0m10:33:46.072872 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.928 seconds
+[0m10:33:46.076639 [debug] [ThreadPool]: Using snowflake connection "list_db_proyecto4_silver"
+[0m10:33:46.077090 [debug] [ThreadPool]: On list_db_proyecto4_silver: show user functions in db_proyecto4.silver
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "connection_name": "list_db_proyecto4_silver"} */
+[0m10:33:46.171712 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.094 seconds
+[0m10:33:46.175615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '863a5294-235c-43a5-9492-5f2933335d46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7baab2603ba0>]}
+[0m10:33:46.178701 [debug] [Thread-1 (]: Began running node snapshot.proyecto_dw.dim_clientes_snapshot
+[0m10:33:46.179348 [info ] [Thread-1 (]: 1 of 1 START snapshot gold.dim_clientes_snapshot ............................... [RUN]
+[0m10:33:46.180066 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_db_proyecto4_gold, now snapshot.proyecto_dw.dim_clientes_snapshot)
+[0m10:33:46.180600 [debug] [Thread-1 (]: Began compiling node snapshot.proyecto_dw.dim_clientes_snapshot
+[0m10:33:46.188532 [debug] [Thread-1 (]: Writing injected SQL for node "snapshot.proyecto_dw.dim_clientes_snapshot"
+[0m10:33:46.189308 [debug] [Thread-1 (]: Began executing node snapshot.proyecto_dw.dim_clientes_snapshot
+[0m10:33:46.256713 [debug] [Thread-1 (]: Using snowflake connection "snapshot.proyecto_dw.dim_clientes_snapshot"
+[0m10:33:46.257599 [debug] [Thread-1 (]: On snapshot.proyecto_dw.dim_clientes_snapshot: select * from (
+        select nombre_cliente, ciudad, email from (
+                
+
+
+
+SELECT * FROM db_proyecto4.silver.dim_clientes
+
+            ) subq
+    ) as __dbt_sbq
+    where false
+    limit 0
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "node_id": "snapshot.proyecto_dw.dim_clientes_snapshot"} */
+[0m10:33:46.467887 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.209 seconds
+[0m10:33:46.481261 [debug] [Thread-1 (]: Using snowflake connection "snapshot.proyecto_dw.dim_clientes_snapshot"
+[0m10:33:46.481900 [debug] [Thread-1 (]: On snapshot.proyecto_dw.dim_clientes_snapshot: describe table "DB_PROYECTO4"."GOLD"."DIM_CLIENTES_SNAPSHOT"
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "node_id": "snapshot.proyecto_dw.dim_clientes_snapshot"} */
+[0m10:33:46.547068 [debug] [Thread-1 (]: SQL status: SUCCESS 9 in 0.065 seconds
+[0m10:33:46.555479 [debug] [Thread-1 (]: Using snowflake connection "snapshot.proyecto_dw.dim_clientes_snapshot"
+[0m10:33:46.556076 [debug] [Thread-1 (]: On snapshot.proyecto_dw.dim_clientes_snapshot: describe table "DB_PROYECTO4"."GOLD"."DIM_CLIENTES_SNAPSHOT"
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "node_id": "snapshot.proyecto_dw.dim_clientes_snapshot"} */
+[0m10:33:46.633438 [debug] [Thread-1 (]: SQL status: SUCCESS 9 in 0.077 seconds
+[0m10:33:46.726504 [debug] [Thread-1 (]: Using snowflake connection "snapshot.proyecto_dw.dim_clientes_snapshot"
+[0m10:33:46.727270 [debug] [Thread-1 (]: On snapshot.proyecto_dw.dim_clientes_snapshot: create or replace temporary table "DB_PROYECTO4"."GOLD"."DIM_CLIENTES_SNAPSHOT__dbt_tmp"
+as (
+    
+    
+    with snapshot_query as (
+
+        
+
+
+
+SELECT * FROM db_proyecto4.silver.dim_clientes
+
+
+    ),
+
+    snapshotted_data as (
+
+        select *, 
+    
+        id_cliente as dbt_unique_key
+    
+
+        from "DB_PROYECTO4"."GOLD"."DIM_CLIENTES_SNAPSHOT"
+        where
+            
+                dbt_valid_to is null
+            
+
+    ),
+
+    insertions_source_data as (
+
+        select *, 
+    
+        id_cliente as dbt_unique_key
+    
+,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_updated_at,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_from,
+            
+  
+  coalesce(nullif(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())), to_timestamp_ntz(convert_timezone('UTC', current_timestamp()))), null)
+  as dbt_valid_to
+,
+            md5(coalesce(cast(id_cliente as varchar ), '')
+         || '|' || coalesce(cast(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as varchar ), '')
+        ) as dbt_scd_id
+
+        from snapshot_query
+    ),
+
+    updates_source_data as (
+
+        select *, 
+    
+        id_cliente as dbt_unique_key
+    
+,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_updated_at,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_from,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_to
+
+        from snapshot_query
+    ),
+
+    insertions as (
+
+        select
+            'insert' as dbt_change_type,
+            source_data.*
+
+        from insertions_source_data as source_data
+        left outer join snapshotted_data
+            on 
+    
+        snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+    
+
+            where 
+    
+        snapshotted_data.dbt_unique_key is null
+    
+
+            or (
+    
+        snapshotted_data.dbt_unique_key is not null
+    
+ and (
+               (snapshotted_data."NOMBRE_CLIENTE" != source_data."NOMBRE_CLIENTE"
+        or
+        (
+            ((snapshotted_data."NOMBRE_CLIENTE" is null) and not (source_data."NOMBRE_CLIENTE" is null))
+            or
+            ((not snapshotted_data."NOMBRE_CLIENTE" is null) and (source_data."NOMBRE_CLIENTE" is null))
+        ) or snapshotted_data."CIUDAD" != source_data."CIUDAD"
+        or
+        (
+            ((snapshotted_data."CIUDAD" is null) and not (source_data."CIUDAD" is null))
+            or
+            ((not snapshotted_data."CIUDAD" is null) and (source_data."CIUDAD" is null))
+        ) or snapshotted_data."EMAIL" != source_data."EMAIL"
+        or
+        (
+            ((snapshotted_data."EMAIL" is null) and not (source_data."EMAIL" is null))
+            or
+            ((not snapshotted_data."EMAIL" is null) and (source_data."EMAIL" is null))
+        ))
+            )
+
+        )
+
+    ),
+
+    updates as (
+
+        select
+            'update' as dbt_change_type,
+            source_data.*,
+            snapshotted_data.dbt_scd_id
+
+        from updates_source_data as source_data
+        join snapshotted_data
+            on 
+    
+        snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+    
+
+        where (
+            (snapshotted_data."NOMBRE_CLIENTE" != source_data."NOMBRE_CLIENTE"
+        or
+        (
+            ((snapshotted_data."NOMBRE_CLIENTE" is null) and not (source_data."NOMBRE_CLIENTE" is null))
+            or
+            ((not snapshotted_data."NOMBRE_CLIENTE" is null) and (source_data."NOMBRE_CLIENTE" is null))
+        ) or snapshotted_data."CIUDAD" != source_data."CIUDAD"
+        or
+        (
+            ((snapshotted_data."CIUDAD" is null) and not (source_data."CIUDAD" is null))
+            or
+            ((not snapshotted_data."CIUDAD" is null) and (source_data."CIUDAD" is null))
+        ) or snapshotted_data."EMAIL" != source_data."EMAIL"
+        or
+        (
+            ((snapshotted_data."EMAIL" is null) and not (source_data."EMAIL" is null))
+            or
+            ((not snapshotted_data."EMAIL" is null) and (source_data."EMAIL" is null))
+        ))
+        )
+    )
+
+    select * from insertions
+    union all
+    select * from updates
+
+    )
+
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "node_id": "snapshot.proyecto_dw.dim_clientes_snapshot"} */;
+[0m10:33:47.835648 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.108 seconds
+[0m10:33:47.839776 [debug] [Thread-1 (]: Using snowflake connection "snapshot.proyecto_dw.dim_clientes_snapshot"
+[0m10:33:47.840554 [debug] [Thread-1 (]: On snapshot.proyecto_dw.dim_clientes_snapshot: describe table "DB_PROYECTO4"."GOLD"."DIM_CLIENTES_SNAPSHOT__dbt_tmp"
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "node_id": "snapshot.proyecto_dw.dim_clientes_snapshot"} */
+[0m10:33:47.936054 [debug] [Thread-1 (]: SQL status: SUCCESS 10 in 0.095 seconds
+[0m10:33:47.939898 [debug] [Thread-1 (]: Using snowflake connection "snapshot.proyecto_dw.dim_clientes_snapshot"
+[0m10:33:47.940458 [debug] [Thread-1 (]: On snapshot.proyecto_dw.dim_clientes_snapshot: describe table "DB_PROYECTO4"."GOLD"."DIM_CLIENTES_SNAPSHOT"
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "node_id": "snapshot.proyecto_dw.dim_clientes_snapshot"} */
+[0m10:33:48.183232 [debug] [Thread-1 (]: SQL status: SUCCESS 9 in 0.242 seconds
+[0m10:33:48.187089 [debug] [Thread-1 (]: Using snowflake connection "snapshot.proyecto_dw.dim_clientes_snapshot"
+[0m10:33:48.187658 [debug] [Thread-1 (]: On snapshot.proyecto_dw.dim_clientes_snapshot: describe table "DB_PROYECTO4"."GOLD"."DIM_CLIENTES_SNAPSHOT__dbt_tmp"
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "node_id": "snapshot.proyecto_dw.dim_clientes_snapshot"} */
+[0m10:33:48.275611 [debug] [Thread-1 (]: SQL status: SUCCESS 10 in 0.087 seconds
+[0m10:33:48.279472 [debug] [Thread-1 (]: Using snowflake connection "snapshot.proyecto_dw.dim_clientes_snapshot"
+[0m10:33:48.280001 [debug] [Thread-1 (]: On snapshot.proyecto_dw.dim_clientes_snapshot: describe table "DB_PROYECTO4"."GOLD"."DIM_CLIENTES_SNAPSHOT"
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "node_id": "snapshot.proyecto_dw.dim_clientes_snapshot"} */
+[0m10:33:48.332603 [debug] [Thread-1 (]: SQL status: SUCCESS 9 in 0.052 seconds
+[0m10:33:48.340988 [debug] [Thread-1 (]: Using snowflake connection "snapshot.proyecto_dw.dim_clientes_snapshot"
+[0m10:33:48.341575 [debug] [Thread-1 (]: On snapshot.proyecto_dw.dim_clientes_snapshot: describe table "DB_PROYECTO4"."GOLD"."DIM_CLIENTES_SNAPSHOT__dbt_tmp"
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "node_id": "snapshot.proyecto_dw.dim_clientes_snapshot"} */
+[0m10:33:48.394322 [debug] [Thread-1 (]: SQL status: SUCCESS 10 in 0.052 seconds
+[0m10:33:48.422367 [debug] [Thread-1 (]: Using snowflake connection "snapshot.proyecto_dw.dim_clientes_snapshot"
+[0m10:33:48.423085 [debug] [Thread-1 (]: On snapshot.proyecto_dw.dim_clientes_snapshot: select * from (
+        
+    
+    with snapshot_query as (
+
+        
+
+
+
+SELECT * FROM db_proyecto4.silver.dim_clientes
+
+
+    ),
+
+    snapshotted_data as (
+
+        select *, 
+    
+        id_cliente as dbt_unique_key
+    
+
+        from "DB_PROYECTO4"."GOLD"."DIM_CLIENTES_SNAPSHOT"
+        where
+            
+                dbt_valid_to is null
+            
+
+    ),
+
+    insertions_source_data as (
+
+        select *, 
+    
+        id_cliente as dbt_unique_key
+    
+,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_updated_at,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_from,
+            
+  
+  coalesce(nullif(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())), to_timestamp_ntz(convert_timezone('UTC', current_timestamp()))), null)
+  as dbt_valid_to
+,
+            md5(coalesce(cast(id_cliente as varchar ), '')
+         || '|' || coalesce(cast(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as varchar ), '')
+        ) as dbt_scd_id
+
+        from snapshot_query
+    ),
+
+    updates_source_data as (
+
+        select *, 
+    
+        id_cliente as dbt_unique_key
+    
+,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_updated_at,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_from,
+            to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_to
+
+        from snapshot_query
+    ),
+
+    insertions as (
+
+        select
+            'insert' as dbt_change_type,
+            source_data.*
+
+        from insertions_source_data as source_data
+        left outer join snapshotted_data
+            on 
+    
+        snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+    
+
+            where 
+    
+        snapshotted_data.dbt_unique_key is null
+    
+
+            or (
+    
+        snapshotted_data.dbt_unique_key is not null
+    
+ and (
+               (snapshotted_data."NOMBRE_CLIENTE" != source_data."NOMBRE_CLIENTE"
+        or
+        (
+            ((snapshotted_data."NOMBRE_CLIENTE" is null) and not (source_data."NOMBRE_CLIENTE" is null))
+            or
+            ((not snapshotted_data."NOMBRE_CLIENTE" is null) and (source_data."NOMBRE_CLIENTE" is null))
+        ) or snapshotted_data."CIUDAD" != source_data."CIUDAD"
+        or
+        (
+            ((snapshotted_data."CIUDAD" is null) and not (source_data."CIUDAD" is null))
+            or
+            ((not snapshotted_data."CIUDAD" is null) and (source_data."CIUDAD" is null))
+        ) or snapshotted_data."EMAIL" != source_data."EMAIL"
+        or
+        (
+            ((snapshotted_data."EMAIL" is null) and not (source_data."EMAIL" is null))
+            or
+            ((not snapshotted_data."EMAIL" is null) and (source_data."EMAIL" is null))
+        ))
+            )
+
+        )
+
+    ),
+
+    updates as (
+
+        select
+            'update' as dbt_change_type,
+            source_data.*,
+            snapshotted_data.dbt_scd_id
+
+        from updates_source_data as source_data
+        join snapshotted_data
+            on 
+    
+        snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+    
+
+        where (
+            (snapshotted_data."NOMBRE_CLIENTE" != source_data."NOMBRE_CLIENTE"
+        or
+        (
+            ((snapshotted_data."NOMBRE_CLIENTE" is null) and not (source_data."NOMBRE_CLIENTE" is null))
+            or
+            ((not snapshotted_data."NOMBRE_CLIENTE" is null) and (source_data."NOMBRE_CLIENTE" is null))
+        ) or snapshotted_data."CIUDAD" != source_data."CIUDAD"
+        or
+        (
+            ((snapshotted_data."CIUDAD" is null) and not (source_data."CIUDAD" is null))
+            or
+            ((not snapshotted_data."CIUDAD" is null) and (source_data."CIUDAD" is null))
+        ) or snapshotted_data."EMAIL" != source_data."EMAIL"
+        or
+        (
+            ((snapshotted_data."EMAIL" is null) and not (source_data."EMAIL" is null))
+            or
+            ((not snapshotted_data."EMAIL" is null) and (source_data."EMAIL" is null))
+        ))
+        )
+    )
+
+    select * from insertions
+    union all
+    select * from updates
+
+    ) as __dbt_sbq
+    where false
+    limit 0
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "node_id": "snapshot.proyecto_dw.dim_clientes_snapshot"} */
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "node_id": "snapshot.proyecto_dw.dim_clientes_snapshot"} */
+[0m10:33:48.775425 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.352 seconds
+[0m10:33:48.779774 [debug] [Thread-1 (]: Using snowflake connection "snapshot.proyecto_dw.dim_clientes_snapshot"
+[0m10:33:48.780308 [debug] [Thread-1 (]: On snapshot.proyecto_dw.dim_clientes_snapshot: select * from (
+        select to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_snapshot_time
+    ) as __dbt_sbq
+    where false
+    limit 0
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "node_id": "snapshot.proyecto_dw.dim_clientes_snapshot"} */
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "node_id": "snapshot.proyecto_dw.dim_clientes_snapshot"} */
+[0m10:33:48.875445 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.095 seconds
+[0m10:33:48.876490 [debug] [Thread-1 (]: Writing runtime sql for node "snapshot.proyecto_dw.dim_clientes_snapshot"
+[0m10:33:48.877452 [debug] [Thread-1 (]: Using snowflake connection "snapshot.proyecto_dw.dim_clientes_snapshot"
+[0m10:33:48.877955 [debug] [Thread-1 (]: On snapshot.proyecto_dw.dim_clientes_snapshot: BEGIN
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "node_id": "snapshot.proyecto_dw.dim_clientes_snapshot"} */
+[0m10:33:49.413192 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.535 seconds
+[0m10:33:49.414121 [debug] [Thread-1 (]: Using snowflake connection "snapshot.proyecto_dw.dim_clientes_snapshot"
+[0m10:33:49.414910 [debug] [Thread-1 (]: On snapshot.proyecto_dw.dim_clientes_snapshot: merge into "DB_PROYECTO4"."GOLD"."DIM_CLIENTES_SNAPSHOT" as DBT_INTERNAL_DEST
+    using "DB_PROYECTO4"."GOLD"."DIM_CLIENTES_SNAPSHOT__dbt_tmp" as DBT_INTERNAL_SOURCE
+    on DBT_INTERNAL_SOURCE.dbt_scd_id = DBT_INTERNAL_DEST.dbt_scd_id
+
+    when matched
+     
+       and DBT_INTERNAL_DEST.dbt_valid_to is null
+     
+     and DBT_INTERNAL_SOURCE.dbt_change_type in ('update', 'delete')
+        then update
+        set dbt_valid_to = DBT_INTERNAL_SOURCE.dbt_valid_to
+
+    when not matched
+     and DBT_INTERNAL_SOURCE.dbt_change_type = 'insert'
+        then insert ("ID_CLIENTE", "NOMBRE_CLIENTE", "CIUDAD", "EMAIL", "DBT_UPDATED_AT", "DBT_VALID_FROM", "DBT_VALID_TO", "DBT_SCD_ID")
+        values ("ID_CLIENTE", "NOMBRE_CLIENTE", "CIUDAD", "EMAIL", "DBT_UPDATED_AT", "DBT_VALID_FROM", "DBT_VALID_TO", "DBT_SCD_ID")
+
+
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "node_id": "snapshot.proyecto_dw.dim_clientes_snapshot"} */;
+[0m10:33:50.294108 [debug] [Thread-1 (]: SQL status: SUCCESS 0 in 0.878 seconds
+[0m10:33:50.294867 [debug] [Thread-1 (]: Using snowflake connection "snapshot.proyecto_dw.dim_clientes_snapshot"
+[0m10:33:50.295363 [debug] [Thread-1 (]: On snapshot.proyecto_dw.dim_clientes_snapshot: COMMIT
+/* {"app": "dbt", "dbt_version": "1.13.0rc1", "profile_name": "proyecto_dw", "target_name": "dev", "node_id": "snapshot.proyecto_dw.dim_clientes_snapshot"} */
+[0m10:33:50.379209 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.083 seconds
+[0m10:33:50.406029 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '863a5294-235c-43a5-9492-5f2933335d46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7baab228fd10>]}
+[0m10:33:50.406954 [info ] [Thread-1 (]: 1 of 1 OK snapshotted gold.dim_clientes_snapshot ............................... [[32mSUCCESS 0[0m in 4.22s]
+[0m10:33:50.407870 [debug] [Thread-1 (]: Finished running node snapshot.proyecto_dw.dim_clientes_snapshot
+[0m10:33:50.409677 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:33:50.410080 [debug] [MainThread]: Connection 'snapshot.proyecto_dw.dim_clientes_snapshot' was left open.
+[0m10:33:50.410535 [debug] [MainThread]: On snapshot.proyecto_dw.dim_clientes_snapshot: Close
+[0m10:33:50.491315 [debug] [MainThread]: Connection 'list_db_proyecto4_silver' was left open.
+[0m10:33:50.492018 [debug] [MainThread]: On list_db_proyecto4_silver: Close
+[0m10:33:50.576718 [info ] [MainThread]: 
+[0m10:33:50.577438 [info ] [MainThread]: Finished running 1 snapshot in 0 hours 0 minutes and 8.53 seconds (8.53s).
+[0m10:33:50.578467 [debug] [MainThread]: Command end result
+[0m10:33:50.617317 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/Proyecto4-DW-AWS-Snowflake/dbt_project/target/manifest.json
+[0m10:33:50.619718 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/Proyecto4-DW-AWS-Snowflake/dbt_project/target/semantic_manifest.json
+[0m10:33:50.622451 [debug] [MainThread]: Wrote artifact OsiDocument to /workspaces/Proyecto4-DW-AWS-Snowflake/dbt_project/target/osi_document.json
+[0m10:33:50.630387 [debug] [MainThread]: Wrote artifact RunExecutionResult to /workspaces/Proyecto4-DW-AWS-Snowflake/dbt_project/target/run_results.json
+[0m10:33:50.630818 [info ] [MainThread]: 
+[0m10:33:50.631438 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:33:50.632023 [info ] [MainThread]: 
+[0m10:33:50.632631 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m10:33:50.633776 [debug] [MainThread]: Resource report: {"command_name": "snapshot", "command_success": true, "command_wall_clock_time": 9.965183, "process_in_blocks": "152", "process_kernel_time": 0.486531, "process_mem_max_rss": "209728", "process_out_blocks": "2912", "process_user_time": 4.36761}
+[0m10:33:50.634636 [debug] [MainThread]: Command `dbt snapshot` succeeded at 10:33:50.634524 after 9.97 seconds
+[0m10:33:50.635091 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7baab00bd440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7baab11b1810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7baab27b8c30>]}
+[0m10:33:50.635591 [debug] [MainThread]: Flushing usage events
+[0m10:33:50.712357 [debug] [MainThread]: An error was encountered while trying to flush usage events
