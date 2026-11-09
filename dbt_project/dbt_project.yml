@@ -1,1 +1,18 @@
 
+name: 'proyecto_dw'
+version: '1.0.0'
+config-version: 2
+profile: 'proyecto_dw'
+
+model-paths: ["models"]
+target-path: "target"
+clean-targets:
+    - "target"
+    - "dbt_packages"
+
+models:
+  proyecto_dw:
+    silver:
+      +materialized: view
+    gold:
+      +materialized: table
