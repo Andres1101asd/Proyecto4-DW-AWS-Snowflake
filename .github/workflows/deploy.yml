@@ -1,1 +1,26 @@
+name: Test AWS Connection
 
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch: # Esto te permite ejecutarlo manualmente desde la pestaña Actions
+
+permissions:
+  id-token: write # Permiso requerido para OIDC
+  contents: read
+
+jobs:
+  aws-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: us-east-1
+
+      - name: Verify AWS Identity
+        run: aws sts get-caller-identity
